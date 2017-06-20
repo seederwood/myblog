@@ -10,5 +10,7 @@
 
   <body>
     <%= yield %>
+
+    <%= js add_gritter(flash[:notice], title: 'Myblog Notification', sticky: false) %>
   </body>
 </html>
