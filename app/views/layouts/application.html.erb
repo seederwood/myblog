@@ -17,6 +17,13 @@
       <%= link_to "Ray Climie", root_path, class: "name" %>
       <nav>
         <%= link_to "Posts", posts_path %>
+        <% if user_signed_in? %>
+          <%= link_to "New Post", new_post_path %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, data: { confirm: 'Really sign out?' } %>
+        <% else %>
+          <%= link_to "Sign In", new_user_session_path %>
+          <%= link_to "Sign Up", new_user_registration_path %>
+        <% end %>
       </nav>
     </header>
 

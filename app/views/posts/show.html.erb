@@ -12,12 +12,13 @@
 
 
     <hr />
-
-    <%= link_to "Edit", edit_post_path, class: "button" %>
-    <%= link_to "Delete", post_path, method: :delete, data: { confirm: "Do you really want to delete this post?" }, class: "button" %><br />
+    <% if user_signed_in? && current_user.id == @post.user_id %>
+      <%= link_to "Edit", edit_post_path, class: "button" %>
+      <%= link_to "Delete", post_path, method: :delete, data: { confirm: "Do you really want to delete this post?" }, class: "button" %><br />
+    <% end %>
     <br />
 
-    <%= link_to "<< Back", posts_path %>
+    <%= link_to "<< Back", :back %>
   </div>
 
 </div>

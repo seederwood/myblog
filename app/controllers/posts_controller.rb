@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-  before_action :find_post, except: %i[index create new]
+  before_action :find_post, only: %i[show edit destroy update]
+  before_action :authenticate_user!, except: %i[index show]
 
   def index
     @posts = Post.all.order('created_at desc')
@@ -8,11 +9,11 @@ class PostsController < ApplicationController
   def show; end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
 
     if @post.save
       redirect_to @post, notice: "Post #{@post.title} was created successfully!"
