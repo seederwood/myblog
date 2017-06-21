@@ -1,12 +1,14 @@
-<%= form_for @post do |f| %>
+<div class="skinny_wrapper">
+  <%= simple_form_for @post do |f| %>
 
-  <%= f.label :title %><br />
-  <%= f.text_field :title %>
-  <br />
-  <br />
-  <%= f.label :content %><br />
-  <%= f.text_area :content %>
-  <br />
-  <%= f.submit %>
+    <%= f.input :title %><br />
 
-<% end %>
+    <br />
+    <br />
+    <%= f.input :content %><br />
+
+    <br />
+    <%= f.button :submit, class: 'button'  %>
+
+  <% end %>
+</div>

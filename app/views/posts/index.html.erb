@@ -1,11 +1,14 @@
-<h1>Posts</h1>
+<h1 id="page_title">Posts</h1>
 
-<% @posts.each do |post| %>
-  <ul>
-    <li>
+<div id="posts_wrapper" class="skinny_wrapper wrapper_with_padding">
+  <% @posts.each do |post| %>
+    <div class="post">
       <h2><%= link_to post.title, post %></h2>
-    </li>
-  </ul>
-<% end %>
+      <p class="date_large"><%= "Created #{time_ago_in_words(post.created_at)} ago" %></p>
+      <hr />
+    </div>
+    <% end %>
 
-<%= link_to "New Post", new_post_path %>
+    <%= link_to "New Post", new_post_path, class: "button button_center" %>
+  </div>
+</div>

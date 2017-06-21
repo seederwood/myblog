@@ -1,6 +1,23 @@
-<h1><%= @post.title %></h1>
-<p><%= @post.content %></p>
+<div id="post_show_content" class="skinny_wrapper wrapper_with_padding">
+  <header>
+    <h1 class="show_header"><%= @post.title %></h1>
+      <p class="date">
+        <%= "Post originated: #{ @post.created_at.strftime('%A, %d %b %Y | %l:%M %p') }" %>
+      </p>
+  </header>
+  <div class="wrapper_with_padding">
+    <div id="content">
+      <p><%= simple_format(@post.content) %></p>
+    </div>
 
-<%= link_to "Back", posts_path %> |
-<%= link_to "Edit", edit_post_path %> |
-<%= link_to "Delete", post_path, method: :delete, data: { confirm: "Do you really want to delete this post?" } %>
+
+    <hr />
+
+    <%= link_to "Edit", edit_post_path, class: "button" %>
+    <%= link_to "Delete", post_path, method: :delete, data: { confirm: "Do you really want to delete this post?" }, class: "button" %><br />
+    <br />
+    
+    <%= link_to "<< Back", posts_path %>
+  </div>
+
+</div>

@@ -1,3 +1,83 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// - - - - INDEX Posts List
+#posts_wrapper {
+  padding: 3em 0;
+  .post {
+    text-align: center;
+    .date {
+      font-size: .5em;
+      margin: 0;
+    }
+    .date_large {
+      font-size: .9em;
+      margin: 0;
+    }
+    h2 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $green;
+        &:hover {
+          color: $highlight;
+        }
+      }
+    }
+    hr {
+      margin: 3em auto;
+    }
+  }
+}
+
+// - - - - - Posts show page
+#post_show {
+	.title_container {
+		margin-bottom: 1.25rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #E9E9E9;
+		.title {
+			@include bold_font;
+			font-size: 2.5rem;
+		}
+		p {
+			font-size: 1.375rem;
+			line-height: 1.75;
+		}
+		.date {
+			left: 8.5%;
+			color: $green;
+			font-size: .85rem;
+		}
+	}
+	.buttons {
+		margin-top: 3rem;
+		a.button {
+			padding: .5rem 2rem;
+			border-radius: 2rem;
+			text-decoration: none;
+			color: $green;
+			border: 5px solid #E9E9E9;
+			@include bold_font;
+			background: transparent;
+			text-decoration: none;
+		}
+	}
+}
+
+#post_show_content {
+  header {
+    text-align: center;
+    .date {
+      font-size: .9em;
+      color: $green;
+      margin: 0;
+    }
+    h1 {
+      @include bold_font;
+      margin: 0;
+    }
+  }
+  hr {
+    margin: 3em auto;
+  }
+}
