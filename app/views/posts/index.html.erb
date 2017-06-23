@@ -4,7 +4,7 @@
   <% @posts.each do |post| %>
     <div class="post">
       <h2><%= link_to post.title, post %></h2>
-      <p class="date_large"><%= "Created #{time_ago_in_words(post.created_at)} ago" %></p>
+      <p class="date_large"><%= "Created #{time_ago_in_words(post.created_at)} ago by #{post.user.username}" %></p>
       <hr />
     </div>
     <% end %>
