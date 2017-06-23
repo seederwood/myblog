@@ -8,7 +8,7 @@ The purpose of this app is two-fold:
 
 todo:
 
-- ~~basic functionality ~~
+- ~~basic functionality~~
 - ~~basic styling with bootstrap~~
 - ~~implement user authorization with Devise gem~~
 - ~~markdown formatting with Redcarpet gem~~
