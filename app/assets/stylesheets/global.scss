@@ -1,6 +1,7 @@
 $dark_gray: #2B2E2E;
 $light_gray: #C0C1C1;
-$green: #5375eb;
+$blue: #5375eb;
+$green: #43ab79;
 $highlight: #b1d059;
 
 
@@ -97,7 +98,7 @@ input[type="submit"], .button {
 button, .button {
 	border: none;
 	outline: none;
-	background: $green;
+	background: $blue;
 	padding: 1rem 3.5rem;
 	border-radius: 2rem;
 	a {
@@ -121,7 +122,7 @@ button, .button {
 }
 
 a {
-	color: $green;
+	color: $blue;
 	text-decoration: none;
 	&:hover {
 		color: $dark_gray;
@@ -148,7 +149,7 @@ a {
     }
   }
 	a {
-		color: $green;
+		color: $blue;
 		text-decoration: none;
 		&:hover {
 			color: $highlight;
@@ -170,7 +171,7 @@ nav {
   float: right;
   padding-top: 1.05rem;
   a {
-    color: $green;
+    color: $blue;
     text-decoration: none;
     margin: 0 1rem;
     font-size: 2rem;
@@ -192,7 +193,7 @@ nav {
     float: right;
     i {
       font-size: 1.10em;
-      color: $green;
+      color: $blue;
       margin-left: 1em;
       &:hover {
         color: $highlight;

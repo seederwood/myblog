@@ -1,4 +1,4 @@
-# MyBlog appl
+# MyBlog app
 
 ## Purpose
 

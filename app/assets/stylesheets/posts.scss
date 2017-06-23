@@ -17,7 +17,7 @@
       text-transform: uppercase;
       a {
         text-decoration: none;
-        color: $green;
+        color: $blue;
         &:hover {
           color: $highlight;
         }
@@ -45,7 +45,7 @@
 		}
 		.date {
 			left: 8.5%;
-			color: $green;
+			color: $blue;
 			font-size: .85rem;
 		}
 	}
@@ -55,7 +55,7 @@
 			padding: .5rem 2rem;
 			border-radius: 2rem;
 			text-decoration: none;
-			color: $green;
+			color: $blue;
 			border: 5px solid #E9E9E9;
 			@include bold_font;
 			background: transparent;
@@ -69,7 +69,7 @@
     text-align: center;
     .date {
       font-size: .9em;
-      color: $green;
+      color: $blue;
       margin: 0;
     }
     h1 {
@@ -80,4 +80,8 @@
   hr {
     margin: 3em auto;
   }
+}
+
+.username {
+  color: $green;
 }
