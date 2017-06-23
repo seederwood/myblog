@@ -8,10 +8,10 @@ The purpose of this app is two-fold:
 
 todo:
 
-- X basic functionality
-- X basic styling with bootstrap
-- X implement user authorization with Devise gem
-- X markdown formatting with Redcarpet gem
-- X code block formatting with Redcarpet/Pygments gems
+- ~~basic functionality ~~
+- ~~basic styling with bootstrap~~
+- ~~implement user authorization with Devise gem~~
+- ~~markdown formatting with Redcarpet gem~~
+- ~~code block formatting with Redcarpet/Pygments gems~~
 - comments
 - tags
