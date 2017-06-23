@@ -82,6 +82,10 @@
   }
 }
 
-.username {
+.username, .username_large {
   color: $green;
+}
+
+.username_large {
+  font-size: 1.25em;
 }
