@@ -1,0 +1,17 @@
+<h1 id="page_title">Tags</h1>
+
+<div id="posts_wrapper" class="skinny_wrapper wrapper_with_padding">
+  <table>
+    <% @tags.each do |tag| %>
+      <tr class="post">
+        <td><%= link_to tag.name, tag %>(<%= tag.posts.size %>)</td>
+          <% if user_signed_in? %>
+            <td><%= link_to "Edit", edit_tag_path(tag) %></td>
+            <td><%= link_to "Delete", tag_path(tag), method: :delete, data: { confirm: 'really delete tag?'} %></td>
+          <% end %>
+
+      </tr>
+    <% end %>
+  </table>
+  <%= link_to "<< Back", :back %>
+</div>

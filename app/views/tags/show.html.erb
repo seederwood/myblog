@@ -1,0 +1,13 @@
+<h1 id="page_title">Posts Tagged as: <%= @tag.name %></h1>
+
+<div id="posts_wrapper" class="skinny_wrapper wrapper_with_padding">
+  <% @tag.posts.each do |post| %>
+    <div class="post">
+      <h2><%= link_to post.title, post %></h2>
+      <p class="username_large"><%= post.user.username %></p>
+      <p class="date_large"><%= "Created #{time_ago_in_words(post.created_at)} ago" %></p>
+      <hr />
+    </div>
+  <% end %>
+  <%= link_to "<< Back to all Posts", posts_path %>
+</div>
