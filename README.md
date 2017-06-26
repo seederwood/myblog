@@ -14,4 +14,5 @@ todo:
 - ~~markdown formatting with Redcarpet gem~~
 - ~~code block formatting with Redcarpet/Pygments gems~~
 - ~~comments~~
-- tags
+- ~~tags~~
+- photos in posts with Paperclip gem
