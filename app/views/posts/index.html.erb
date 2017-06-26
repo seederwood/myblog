@@ -4,6 +4,11 @@
   <% @posts.each do |post| %>
     <div class="post">
       <h2><%= link_to post.title, post %></h2>
+      <p class="comment_large">
+        <% if post.comments.any? %>
+          <%= pluralize(post.comments.size, "comment") %>
+        <% end %>
+      </p>
       <p class="date_large"><%= "Created #{time_ago_in_words(post.created_at)} ago" %> by <%= link_to post.user.username, user_posts_path(post.user), class: "username" %></p>
       <hr />
     </div>

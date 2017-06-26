@@ -1,0 +1,4 @@
+<div class="comment">
+  <h4 class="name"> <%= "#{time_ago_in_words(comment.created_at)} ago" %>,  <%= comment.name %> said:</h4>
+  <p><%= markdown comment.body %></p>
+</div>

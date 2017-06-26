@@ -1,0 +1,42 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.name {
+  font-size: 1.0em;
+  color: $blue;
+  margin: 0;
+}
+.comment {
+  font-size: .9em;
+  border-top: 1px solid #ddd;
+  background: #f5f5f5;
+  padding: 1em 0;
+  border-bottom: 1px dashed #ddd;
+  color: #6c7c9a
+}
+
+.comment p {
+  padding-left: 12px;
+}
+
+.comment p:first-child {
+  font-weight: bold;
+  color: #2d4159;
+  padding-left: 0;
+  border: 0;
+  padding-bottom: 1em
+}
+
+.comment+.comment {
+  border-top: none
+}
+
+.comment+h3, .comment+h4 {
+  margin: 0 0 .5em
+}
+
+.comment:nth-last-of-type(1) {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2em
+}

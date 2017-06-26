@@ -1,0 +1,13 @@
+<div class="skinny_wrapper">
+  <%= simple_form_for [ @post, @comment ] do |f| %>
+
+    <%= f.input :name, label: "Your Name" %><br />
+
+    <br />
+    <%= f.input :body, label: "Your Comment" %><br />
+
+    <br />
+    <%= f.button :submit, class: 'button'  %>
+
+  <% end %>
+</div>
