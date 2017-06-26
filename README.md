@@ -13,5 +13,5 @@ todo:
 - ~~implement user authorization with Devise gem~~
 - ~~markdown formatting with Redcarpet gem~~
 - ~~code block formatting with Redcarpet/Pygments gems~~
-- comments
+- ~~comments~~
 - tags
