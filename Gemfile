@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.3.3'
+
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'bourbon', '~> 4.3', '>= 4.3.4'
 gem 'coffee-rails', '~> 4.2'
@@ -38,6 +40,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
