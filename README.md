@@ -15,4 +15,4 @@ todo:
 - ~~code block formatting with Redcarpet/Pygments gems~~
 - ~~comments~~
 - ~~tags~~
-- photos in posts with Paperclip gem
+- ~~photos in posts with Paperclip gem~~

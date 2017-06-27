@@ -5,9 +5,20 @@
       <p class="date">
         <%= "Post originated: #{ @post.created_at.strftime('%A, %d %b %Y | %l:%M %p') }" %>
       </p>
+      <% if @post.updated_at != @post.created_at %>
+        <p class="date">
+          <%= "Post last updated: #{ @post.updated_at.strftime('%A, %d %b %Y | %l:%M %p') }" %>
+        </p>
+      <% end %>
   </header>
   <div class="wrapper_with_padding">
     <div id="content">
+      <% if @post.image.exists? %>
+        <p><%= image_tag @post.image.url(:large) %></p>
+        <p class="date">
+          <%= "Image last updated: #{ @post.image_updated_at.strftime('%A, %d %b %Y | %l:%M %p') }" %>
+        </p>
+      <% end %>
       <p><%= markdown @post.content %></p>
     </div>
     <hr>

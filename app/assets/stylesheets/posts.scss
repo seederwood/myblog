@@ -103,4 +103,9 @@
 
 #content {
   font-size: 1.4em;
+  .date {
+    font-size: .7em;
+    color: $blue;
+    margin: 0;
+  }
 }
